@@ -5,7 +5,11 @@
     --cor2: #D0F2C5;
     --cor3: #60714E;
     --cor4: #F0F5EF;
-    --fonte-nav: 'Courier New', Courier, monospace;
+    --fonte1: font-family: 'ADLaM Display', cursive;
+    font-family: 'Amatic SC', cursive;
+  
+    --fonte2: font-family: 'Inconsolata', monospace;
+    --fonte3: font-family: 'Kaushan Script', cursive;
 }
 
 header{
@@ -28,6 +32,8 @@ body{
 #titulo > h1 {
     font-size: 60px;
     color: var(--cor2);
+    
+ 
 }
 
 nav{
@@ -122,8 +128,8 @@ footer > p{
         margin: 7px 20px 7px 7px;
         padding: 7px;
     }
-    #destaque > img, #destaque > p{
-        width: 300px;
+    #banner > img, #banner > p{
+        width: 400px;
     }
     main{
         grid-template-columns: 1fr 1fr;
@@ -146,7 +152,7 @@ footer > p{
         margin: 5px 10px 5px 5px;
         padding: 5px;
     }
-    #destaque > img, #destaque > p{
+    #banner > img, #banner > p{
         width: 100%;
     }
     main{

@@ -1,56 +1,48 @@
 @charset "UTF-8";
 
 :root{
-    --cor-header: #EA522A;
-    --cor-header-text: #BAE3E3;
-
-    --cor-nav: #253540;
-    --cor-nav-text: #F8FFF4;
-    
-    --cor-nav-hover: #d3e7f5;
-    --cor-nav-hover-text: #686828;
+    --cor1: #89A666;
+    --cor2: #D0F2C5;
+    --cor3: #60714E;
+    --cor4: #F0F5EF;
     --fonte-nav: 'Courier New', Courier, monospace;
 }
 
 header{
-    background-color: var(--cor-header);
+    background-color: var(--cor1);
     display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-items: center;
+    grid-template-columns: 120px 1fr;
     align-items: center;
+    justify-items: center;
+ 
 }
-#logo > img{
+body{
+    background-color: var(--cor2);
+}
+
+logo > img{
     width: 120px;
-    animation: gira-img 6s infinite alternate;
-}
-@keyframes gira-img {
-    0%{
-        transform: rotate(0deg) scale(1);
-    }
-    100%{
-        transform: rotate(360deg) scale(0.5);
-    }
+    
 }
 
 #titulo > h1 {
-    font-size: 42px;
-    color: var(--cor-header-text);
+    font-size: 60px;
+    color: var(--cor2);
 }
 
 nav{
-    background-color: var(--cor-nav);
+    background-color: var(--cor3);
 }
 nav > a{
-    color: var(--cor-nav-text);
-    font-size: 32px;
+    color: var(--cor2);
+    font-size: 30px;
     text-decoration: none;
-    margin: 10px 30px 10px 10px;
-    
+    margin: 5px 10px 5px 5px;
     padding: 10px;
     display: inline-block;
 }
 nav > a:hover{
-    background-color: var(--cor-nav-hover);
+    background-color: var(--cor1);
     color: var(--cor-nav-hover-text);
     transform: rotate(-180deg);
     transition: all 0.5s ease-in-out;
@@ -58,37 +50,30 @@ nav > a:hover{
 }
 
 #destaque > img, #destaque > p{
-    width: 400px;
     display: block;
     margin: auto;
 }
 #destaque > p{
-    position: relative;
-    font-size: 20px;
+    font-size: 30px;
     top: -83px;
-    background-color: var(--cor-nav);
-    color: var(--cor-nav-text);
+    background-color: var(--cor3);
+    color: var(--cor4);
+    background-position: center;
+   
 }
 #principal{
     display: grid;
     grid-template-columns: 1fr 120px;
 }
 #principal > aside{
-    background-image: url("../Imagens/propagandas/Patrocinador1.png");
+   
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100px;
     min-height: 150px;
-    animation: muda-propaganda 8s infinite alternate;
+  
 }
-@keyframes muda-propaganda {
-    0%{
-        background-image: url("../Imagens/propagandas/Patrocinador1.png");
-    }
-    100%{
-        background-image: url("../Imagens/propagandas/Patrocinador2.png");
-    }
-}
+
 
 main{
     display: grid;

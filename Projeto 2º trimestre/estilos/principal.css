@@ -20,7 +20,7 @@ body{
     background-color: var(--cor2);
 }
 
-logo > img{
+#logo > img{
     width: 120px;
     
 }
@@ -49,11 +49,11 @@ nav > a:hover{
 
 }
 
-#destaque > img, #destaque > p{
+#banner > img, #banner > p{
     display: block;
     margin: auto;
 }
-#destaque > p{
+#banner > p{
     font-size: 30px;
     top: -83px;
     background-color: var(--cor3);
@@ -64,16 +64,29 @@ nav > a:hover{
 #principal{
     display: grid;
     grid-template-columns: 1fr 120px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 265px;
+
+
 }
 #principal > aside{
-   
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100px;
+    background-size: 150px;
     min-height: 150px;
-  
+    
 }
-
+#artico{
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 800px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 15px;
+    background-image: url("Imagens/noticias/articoo.jpg");
+    text-decoration: none;
+}
 
 main{
     display: grid;
